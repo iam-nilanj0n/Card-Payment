@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(159, 155, 164);
+    padding-top: 15vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 5vh 5vw;
+}
+
+#payment {
+    height: 80vh;
+    width: 20vw;
+    background-color: white;
+    border: 0;
+    border-radius: 40px;
+    padding: 5vh 3vw 0 3vw;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+#payment h2 {
+    margin: 0 0 2vh 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.details {
+    margin: 3vh 0 0 0;
+}
+
+.details p {
+    margin: 1vh 0;
+    font-weight: 750;
+    text-decoration: underline;
+}
+
+.tickSection {
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+}
+
+.tickSection img {
+    height: 16px;
+    width: 16px;
+    margin: 0 0.5vw 0 0.5vw;
+}
+
+.tickSection p {
+    margin: 0 2vw 0 0;
+}
+
+.inputSection {
+    margin: 2vh 0 0 0;
+}
+
+.inputSection h4 {
+    margin: 1vh 0 1vh 0;
+}
+
+.inputSection input {
+    margin: 1vh 0 1vh 0;
+    padding: 8px;
+}
+.inputSection button{
+    margin: 2vh 0;
+    padding: 8px;
+    background-color: blue;
+    border: 0;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: white;
+    box-shadow: 0 4px #999;
+}
+.inputSection button:hover{
+    background-color: rgb(67, 205, 106);
+    cursor:pointer;
+}
+.inputSection button:active{
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+.timeCVV {
+    display: flex;
+    flex-direction: row;
+}
+
+.timeCVV input {
+    width: 5vw;
+    margin: 0 2vw 0 0;
+    padding: 8px;
+}
+
+/* remove section is here */
+
+#remove{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    height: 30vh;
+    width: 15vw;
+    margin: 45vh 5vw 0 70vw;
+    padding: 4vh;
+    visibility: hidden;
+    border: 0;
+    border-radius: 10px;
+}
+#remove h2{
+    margin: 0 0 0 4vw;
+}
+#remove h4{
+    color: rgb(39, 36, 36);
+    margin: 1vh 0;
+}
+#remove .confirm{
+    width: 10vw;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px rgb(135, 135, 135);
+    margin: 2vh 0 2vh 2vw;
+}
+#remove .confirm:hover{
+    background-color: rgb(255, 64, 0);
+    cursor: pointer;
+}
+#remove .confirm:active{
+    background-color: rgb(255, 64, 0);
+    box-shadow: 0 2px rgb(46, 46, 46);
+    transform: translateY(2px);
+}
+
+#remove .takeBack{
+    width: 10vw;
+    padding: 5px;
+    background-color: rgb(222, 217, 217);
+    font-weight: bolder;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px rgb(135, 135, 135);
+    margin: 2vh 0 2vh 2vw;
+}
+#remove .takeBack:hover{
+    background-color: rgb(252, 212, 199);
+    cursor: pointer;
+}
+#remove .takeBack:active{
+    background-color: rgb(252, 212, 199);
+    box-shadow: 0 2px rgb(46, 46, 46);
+    transform: translateY(2px);
+}
+/* success section is here */
+
+#success{
+    height: 30vh;
+    width: 20vw;
+    position: absolute;
+    background-color: green;
+    z-index: -1;
+    margin: 55vh 0 0 22vw;
+    border: 0;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+#success div{
+    height: 4vh;
+    width: 4vh;
+    padding: 0.5vh;
+    background-color: white;
+    border: 0;
+    border-radius: 50%;
+    margin: 6vh 0 3vh 10vw;
+}
+
+#success div img{
+    height: 3vh;
+    width: 3vh;
+    position: relative;
+    margin: 0.25vh 0 0 0.25vh;
+}
+
+#success h2 {
+    color: bisque;
+    font-weight: bolder;
+    margin: 0 0 0 8.5vw;
+}
+#success p {
+    color: bisque;
+    font-weight: bolder;
+    margin: 0 0 0 5vw;
+}
+
+/* invoice section is here */
+#invoice{
+    position: absolute;
+    margin: 0 0 0 50vw;
+    background-color: white;
+    height: 20vh;
+    width: 15vw;
+    padding: 3vh;
+    border: 0;
+    border-radius: 10px;
+    visibility: hidden;
+}
+#invoice div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1vh ;
+}
